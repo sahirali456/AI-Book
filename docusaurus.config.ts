@@ -52,7 +52,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: "img/docusaurus-social-card.jpg",
+    image: "https://drive.google.com/file/d/1QwtcmVcNU3pFdC9BgQxNLGVp22YBfCKZ/view?usp=sharing",
     
     colorMode: {
       respectPrefersColorScheme: true,
