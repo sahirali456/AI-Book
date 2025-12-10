@@ -11,14 +11,15 @@ const config: Config = {
     v4: true,
   },
 
-  url: "https://your-docusaurus-site.example.com",
+  // Aapki portfolio site ko base URL bana diya
+  url: "https://sahirali.vercel.app", 
   baseUrl: "/",
 
-  organizationName: "facebook",
-  projectName: "docusaurus",
+  // GitHub User info update kar di
+  organizationName: "sahirali456", 
+  projectName: "AI-Book", 
 
-  // --- CHANGE 1: Error ko ignore karne ke liye 'warn' kiya ---
-  onBrokenLinks: "warn", 
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
 
   i18n: {
@@ -70,6 +71,18 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
+        // --- ADDED: Portfolio Link in Navbar ---
+        {
+          href: "https://sahirali.vercel.app",
+          label: "Portfolio",
+          position: "left",
+        },
+        // --- ADDED: GitHub Link in Navbar ---
+        {
+          href: "https://github.com/sahirali456",
+          label: "GitHub",
+          position: "right",
+        },
       ],
     },
 
@@ -86,30 +99,36 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
+          title: "Connect",
           items: [
+            // --- ADDED: LinkedIn Link ---
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/in/sahir-ali-65380a33a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             },
+            // --- ADDED: GitHub Link ---
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "GitHub Profile",
+              href: "https://github.com/sahirali456",
             },
           ],
         },
         {
-          title: "More",
+          title: "Contact & More",
           items: [
-            // --- CHANGE 2: Blog Link removed to stop errors ---
+            // --- ADDED: Email Link ---
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "Email Me",
+              href: "mailto:syedsahirali639@gmail.com",
+            },
+            // --- ADDED: Portfolio Website ---
+            {
+              label: "My Website",
+              href: "https://sahirali.vercel.app",
             },
           ],
         },
       ],
-      // Copyright line add kar di hai taake footer complete lagay
       copyright: `Copyright © ${new Date().getFullYear()} AI Humanoid Robotics. Built with Docusaurus.`,
     },
 
